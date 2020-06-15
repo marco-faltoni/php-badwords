@@ -10,5 +10,7 @@ $badword = $_GET['parola'];
 $position = str_replace($badword, '***', $testo);
 
 echo $position;
+$lunghezza_paragrafo = strlen($testo);
+echo ' lunghezza del paragrafo = ' . $lunghezza_paragrafo;
 
 ?>
