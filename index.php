@@ -14,7 +14,9 @@ $position = strpos($testo, $badword);
 if ($position) {
     $badword = '***';
     $var = $_GET[$badword];
-    echo $testo . $badword;
+    $testo = 'Ciao ' . $badword . " come stai?";
+    echo $testo;
+    var_dump(($testo));
 };
 
 
