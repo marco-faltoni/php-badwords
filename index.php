@@ -3,8 +3,19 @@ Stampate a schermo il testo censurato all'interno di un paragrafo e la lunghezza
 
 <?php
 
-$testo = $_GET['lorem ipsum'];
+$testo = 'Ciao Stronzo, come stai?';
+
 var_dump($testo);
+
+$badword = 'Stronzo';
+
+$position = strpos($testo, $badword);
+
+if ($position) {
+    $badword = '***';
+    $var = $_GET[$badword];
+    echo $testo;
+};
 
 
 ?>
