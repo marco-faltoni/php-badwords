@@ -3,21 +3,12 @@ Stampate a schermo il testo censurato all'interno di un paragrafo e la lunghezza
 
 <?php
 
-$testo = 'Ciao Stronzo, come stai?';
+$testo = 'Ciao marco, come stai?';
 
-var_dump($testo);
+$badword = $_GET['parola'];
 
-$badword = 'Stronzo';
+$position = str_replace($badword, '***', $testo);
 
-$position = strpos($testo, $badword);
-
-if ($position) {
-    $badword = '***';
-    $var = $_GET[$badword];
-    $testo = 'Ciao ' . $badword . " come stai?";
-    echo $testo;
-    var_dump(($testo));
-};
-
+echo $position;
 
 ?>
