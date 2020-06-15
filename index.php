@@ -7,10 +7,11 @@ $testo = 'Ciao marco, come stai?';
 
 $badword = $_GET['parola'];
 
-$position = str_replace($badword, '***', $testo);
+$nuovo_testo = str_replace($badword, '***', $testo);
 
-echo $position;
-$lunghezza_paragrafo = strlen($testo);
+echo $nuovo_testo;
+$tolgo_spazi = trim($nuovo_testo);
+$lunghezza_paragrafo = strlen($nuovo_testo);
 echo ' lunghezza del paragrafo = ' . $lunghezza_paragrafo;
 
 ?>
