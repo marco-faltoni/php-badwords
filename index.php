@@ -14,7 +14,7 @@ $position = strpos($testo, $badword);
 if ($position) {
     $badword = '***';
     $var = $_GET[$badword];
-    echo $testo;
+    echo $testo . $badword;
 };
 
 
